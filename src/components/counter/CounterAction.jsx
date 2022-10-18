@@ -12,8 +12,13 @@ function CounterAction() {
   };
 
   const decrrement = () => {
-    dispatch(decrementCount());
-  };
+    if (CounterGlobalValue <=0 ){
+     console.log("nth todo");
+    }
+     else {
+       dispatch(decrementCount());
+     }
+    }
   return (
     <div>
       <Counter
@@ -23,6 +28,6 @@ function CounterAction() {
       />
     </div>
   );
-}
+  }
 
 export default CounterAction;
