@@ -1,9 +1,16 @@
-import React from 'react'
+import "./home.css";
+import { useSelector } from "react-redux";
 
 const Home = () => {
+  const CounterGlobalValue = useSelector((state) => state.counterStore.counter);
+
   return (
-    <h3> Home</h3>
-  )
-}
+    <div>
+      <h3> Home</h3>
+
+      <h4>we are supported by {CounterGlobalValue}$ </h4>
+    </div>
+  );
+};
 
 export default Home;
