@@ -16,13 +16,13 @@ const Details = () => {
 
   const [product, setProduct] = useState({});
   return (
-    <div>
-      <dir>
-        <img style={{ width: "250px" }} src={product.image} alt="" />
-      </dir>
+    <div className="details">
       <div>
-        <h4>{product.title}</h4>
-        <h5>{product.price}</h5>
+        <img style={{ width: "200px" }} src={product.image} alt="" />
+      </div>
+      <div className="info">
+        <span>{product.title}</span>
+        <span>Price: {product.price}$</span>
       </div>
     </div>
   );

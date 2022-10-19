@@ -7,5 +7,46 @@
 .parent {
   margin-top: 50px;
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
+}
+.product {
+  height: 350px;
+  padding: 20px;
+  margin-bottom: 50px;
+  width: 20%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  background-color: chocolate;
+  color: #fff;
+  width: 100px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.details {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 350px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.info {
+  display: block;
+}
+span {
+  display: block;
+  font-weight: bold;
+  color: blue;
 }

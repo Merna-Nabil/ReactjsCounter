@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./components/About/Index";
+import Cart from "./components/Cart";
 import CounterAction from "./components/counter/CounterAction";
 import Home from "./components/Home/Index";
 import Navbar from "./components/Navbar/Index";
@@ -15,6 +16,7 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/counter" element={<CounterAction />} />
         <Route path="/shop/:id" element={<Details />} />
+        <Route path="/Cart/" element={<Cart />} />
       </Routes>
     </BrowserRouter>
   );
