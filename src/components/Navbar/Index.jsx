@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = () => {
-  const cartList = useSelector((state) => state.cartStore.cartList);
   const cartCount = useSelector((state) => state.cartStore.cartCount);
 
   return (
@@ -25,6 +24,10 @@ const Navbar = () => {
         </li>
         <Link to="/Cart">
           <li className="cart">cart{cartCount}</li>
+        </Link>
+
+        <Link to="/signup">
+          <li className="cart">Singup</li>
         </Link>
       </ul>
     </div>
